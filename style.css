@@ -1,0 +1,95 @@
+body {
+    color: #fff;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #29526D;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#weather-card {
+    /* background-image: url("https://i.imgur.com/dpqZJV5.jpg"); */
+    width: 1000px;
+    height: 500px;
+    border-radius: 20px;
+    background-size: cover;
+    /* box-shadow: 0px 8px 16px 4px #9E9E9E; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 45px;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.time-font {
+    font-size: 50px;
+}
+
+.sm-font {
+    font-size: 18px;
+}
+
+.med-font {
+    font-size: 28px;
+}
+
+.large-font {
+    font-size: 60px;
+}
+
+label {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-size: 60px;
+ color: #AA8C39;
+}
+
+input {
+height: 60px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-size: 60px;
+ color: #AA8C39;
+ background-color: #29526D;
+
+}
+
+#spinner:not([hidden]) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #spinner::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: 2px solid #f3f3f3;
+    border-top: 3px solid #f25a41;
+    border-radius: 100%;
+    will-change: transform;
+    animation: spin 1s infinite linear
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
